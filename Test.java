@@ -1,1 +1,8 @@
-class LinkedList
+class Node{
+    int data;
+    Node next;
+}
+
+class LinkedList{
+    
+}
