@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Node{
     int data;
     Node next;
@@ -6,3 +7,11 @@ class Node{
 class LinkedList{
     
 }
+=======
+//vir
+
+
+//fkenfkenkfenkfen
+
+//testing
+>>>>>>> vir's-branch
