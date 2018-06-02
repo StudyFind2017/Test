@@ -1,5 +1,5 @@
 var studies = [];
-function createStudy
+function createStudy()
 {
 	studies[studies.length] = 
 	{
@@ -54,4 +54,28 @@ function createStudy
 		localStorage.setItem("studies", jsonText);
 	}
 
+}
+
+function printStudies()
+{
+	if(localStorage.getitem("studies")==null)
+	{
+		console.log("No studies to display");
+	}
+
+	else
+	{
+
+		var newArr = JSON.parse(localStorage.getItem("studies"));
+
+		var studies_local = [];
+
+		for(var k = 0; k < newArr.length; k++)
+		{
+			studies_local[k] = JSON.parse(newArr[k]);
+		}
+
+		console.log(studies_local);
+
+	}
 }

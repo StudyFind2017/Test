@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Create New Study </title>
+		<script src="addstudy.js"></script>
+		<link rel="stylesheet" type="text/css" href="../signup.css">
+	</head>
+	<body>
+		<img src="../img/StudyFindLogo.png" class="StudyFindLogo">
+		<h1> Create A New Study </h1>
+		<h4> AS YOU MAKE YOUR STUDY DESCRIPTION MORE INFORMATIVE, YOU WILL BE ABLE TO ATTRACT INTEREST OF THE MOST SUITABLE PARTICIPANTS </h4>
+		Study Name: <input type="text" placeholder="Study Name" id="studyName"><br><br>
+		Study Type: <input type="text" placeholder="Study Type" list="StudyType" id="studyType"><br><br>
+			<datalist id="StudyType">
+		    	<option value="Psychological">
+		    	<option value="Sociological">
+		    	<option value="Behavorial">
+		    	<option value="Observational">
+		    	<option value="Clinical">
+		    	<option value="Surgical">
+			</datalist>
+		Aim of study: <input type="text" placeholder="Aim of study" id="aim"><br><br>
+		Description: <textarea placeholder="A description of your study..." id="description"></textarea><br><br><br><br><br><br><br>
+		Methodology: <textarea type="text" placeholder="Methodology" id="method"></textarea><br><br><br><br><br><br><br>
+		Associated Risks: <textarea type="text" placeholder="Risks" id="risks"></textarea><br><br><br><br><br><br><br>
+		Time Commitments (in hours): <input type="text" placeholder="Time (in hours)" id="time"><br><br>
+		Number of participants: <input type="text" placeholder="Number of participants" id="participants"><br><br>
+		Compensation: <input type="text" placeholder="Compensation/hour" id="compensation"><br><br>
+		Study Location: <input type="text" placeholder="Study Location" id="location"><br><br>
+		Study Dates: <input type="text" placeholder="Study Dates" id="dates"><br><br>
+		IRB Number: <input type="text" placeholder="IRB Number" id="irb"><br><br>
+		<h3>Eligibility Criteria by Demographics</h3>
+			<ol>
+				<li>
+					<u>Age Requirement</u> 
+					<ul><br>
+						<li>Minimum: <input type="Number" placeholder="Min" id="min"></li><br>
+						<li>Maximum: <input type="Number" placeholder="Max" id="max"></li><br>
+					</ul>
+				</li>
+				<li>
+					<u>Sex Requirement</u>
+					<ul><br>
+						<li>
+							Sex:
+							<select id="sex">
+						    	<option value="Male"> Male </option>
+						    	<option value="Female"> Female </option>
+							</select>
+							<br><br>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<u>Gender Requirement</u><br><br>
+					<ul>
+						<li>
+							Gender: <input type="text" list="Gender" placeholder="Gender" id="gender"><br><br>
+							<datalist id="Gender">
+							 	<option value="Male">
+							 	<option value="Female">
+							 	<option value="Agender">
+							 	<option value="Cisgender">
+							 	<option value="Genderfluid">
+							 	<option value="Genderqueer">
+							 	<option value="Intersex">
+							 	<option value="Non-conforming">
+							 	<option value="Transgender">
+							</datalist>
+						</li>
+					</ul>
+				</li>		
+				<li>
+					<u>Ethnic Requirement</u><br><br>
+					<ul>
+						<li>	
+							Ethnicity: <input type="text" list="Ethnicity" placeholder="Ethnicity" id="ethnicity"><br><br>
+							<datalist id="Ethnicity">
+							   	<option value="Asian">
+							   	<option value="African-American">
+							   	<option value="Hispanic">
+							   	<option value="Latino">
+							   	<option value="Native American">
+							   	<option value="Caucasian">	
+							</datalist>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<u>Medical Conditions</u><br><br>
+					<ul>
+						<li>
+							Condition 1: <input type="text" list="Condition1" placeholder="Condition 1" id="condition1"><br><br>
+							<datalist id="Condition1">
+								<option value="Diabetes"> Diabetes </option> 
+								<option value="Hypertension"> Hypertension </option> 
+								<option value="Hyperlipidemia"> Hyperlipidemia </option> 
+								<option value="Back pain"> Back pain </option> 
+								<option value="Anxiety"> Anxiety </option> 
+								<option value="Obesity"> Obesity </option> 
+								<option value="Respiratory problems"> Respiratory problems </option> 
+								<option value="Hypothyroidism"> Hypothyroidism </option> 
+								<option value="Fatigue"> Fatigue </option> 
+								<option value="Pain in joint"> Pain in joint </option> 
+								<option value="Depression"> Depression  </option> 
+								<option value="Bronchitis"> Bronchitis </option> 
+								<option value="Asthma"> Asthma </option> 
+							</datalist>
+						</li>
+						<li>
+							Condition 2: <input type="text" list="Condition2" placeholder="Condition 2" id="condition2"><br><br>
+							<datalist id="Condition2">
+								<option value="Diabetes"> Diabetes </option> 
+								<option value="Hypertension"> Hypertension </option> 
+								<option value="Hyperlipidemia"> Hyperlipidemia </option> 
+								<option value="Back pain"> Back pain </option> 
+								<option value="Anxiety"> Anxiety </option> 
+								<option value="Obesity"> Obesity </option> 
+								<option value="Respiratory problems"> Respiratory problems </option> 
+								<option value="Hypothyroidism"> Hypothyroidism </option> 
+								<option value="Fatigue"> Fatigue </option> 
+								<option value="Pain in joint"> Pain in joint </option> 
+								<option value="Depression"> Depression  </option> 
+								<option value="Bronchitis"> Bronchitis </option> 
+								<option value="Asthma"> Asthma </option> 
+							</datalist>
+						</li>
+						<li>
+							Condition 3: <input type="text" list="Condition3" placeholder="Condition 3" id="condition3"><br><br>
+							<datalist id="Condition3">
+								<option value="Diabetes"> Diabetes </option> 
+								<option value="Hypertension"> Hypertension </option> 
+								<option value="Hyperlipidemia"> Hyperlipidemia </option> 
+								<option value="Back pain"> Back pain </option> 
+								<option value="Anxiety"> Anxiety </option> 
+								<option value="Obesity"> Obesity </option> 
+								<option value="Respiratory problems"> Respiratory problems </option> 
+								<option value="Hypothyroidism"> Hypothyroidism </option> 
+								<option value="Fatigue"> Fatigue </option> 
+								<option value="Pain in joint"> Pain in joint </option> 
+								<option value="Depression "> Depression  </option> 
+								<option value="Bronchitis"> Bronchitis </option> 
+								<option value="Asthma"> Asthma </option> 
+							</datalist>
+						</li>
+						<li>
+							Condition 4: <input type="text" list="Condition4" placeholder="Condition 4" id="condition4"><br><br>
+							<datalist id="Condition4">
+								<option value="Diabetes"> Diabetes </option> 
+								<option value="Hypertension"> Hypertension </option> 
+								<option value="Hyperlipidemia"> Hyperlipidemia </option> 
+								<option value="Back pain"> Back pain </option> 
+								<option value="Anxiety"> Anxiety </option> 
+								<option value="Obesity"> Obesity </option> 
+								<option value="Respiratory problems"> Respiratory problems </option> 
+								<option value="Hypothyroidism"> Hypothyroidism </option> 
+								<option value="Fatigue"> Fatigue </option> 
+								<option value="Pain in joint"> Pain in joint </option> 
+								<option value="Depression "> Depression  </option> 
+								<option value="Bronchitis"> Bronchitis </option> 
+								<option value="Asthma"> Asthma </option> 
+							</datalist>
+						</li>
+						<li>
+							Condition 5: <input type="text" list="Condition5" placeholder="Condition 5" id="condition5"><br><br>
+							<datalist id="Condition5">
+								<option value="Diabetes"> Diabetes </option> 
+								<option value="Hypertension"> Hypertension </option> 
+								<option value="Hyperlipidemia"> Hyperlipidemia </option> 
+								<option value="Back pain"> Back pain </option> 
+								<option value="Anxiety"> Anxiety </option> 
+								<option value="Obesity"> Obesity </option> 
+								<option value="Respiratory problems"> Respiratory problems </option> 
+								<option value="Hypothyroidism"> Hypothyroidism </option> 
+								<option value="Fatigue"> Fatigue </option> 
+								<option value="Pain in joint"> Pain in joint </option> 
+								<option value="Depression"> Depression </option> 
+								<option value="Bronchitis"> Bronchitis </option> 
+								<option value="Asthma"> Asthma </option> 
+							</datalist>
+						</li>
+					</ul>
+				</li>
+			</ol>
+			<br><br><input type="submit" value="Submit" onclick="createStudy()" style="float: left"><br><br>
+			<br><br><button onclick="printStudies()"> PRINT TO CONSOLE </button><br><br>
+	</body>
+</html>
