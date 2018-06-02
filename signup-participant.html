@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up - Participant</title>
+		<!-- <link rel="stylesheet" href="../signup.css"> -->
+		<script src="signup-participant.js"></script>
+	</head>
+	<body>
+		<h1> Participant Sign Up </h1>
+		<h6 style="text-transform: uppercase;"> Please note that as you provide more information, we will be able to show you research studies more suited to you  </h6>
+		<section>
+			<h2> General Information </h2>
+			<form>
+				First Name: <input type="text" placeholder="First Name" id="firstName"><br><br>
+				Last Name: <input type="text" placeholder="Last Name" id="lastName"><br><br>
+				Username: <input type="text" placeholder="Username" id="username"><br><br>
+				Email: <input type="text" placeholder="Email" id="email"><br><br>
+				Phone: <input type="text" placeholder="Phone" id="phone"><br><br>
+				Password: <input type="password" placeholder="Password" id="password"><br><br>
+				Confirm Password: <input type="password" placeholder="Confirm Password"><br><br>
+			</form>
+		</section>
+		<section>
+			<h2> Demographics </h2>
+			<form>
+				Birthday: <input type="date" placeholder="Birthday" id="birthday"><br><br>
+				Gender: <input type="text" list="Gender" placeholder="Gender" id="gender"><br><br>
+			  	<datalist id="Gender">
+			    	<option value="Male">
+			    	<option value="Female">
+			    	<option value="Agender">
+			    	<option value="Cisgender">
+			    	<option value="Genderfluid">
+			    	<option value="Genderqueer">
+			    	<option value="Intersex">
+			    	<option value="Non-conforming">
+			    	<option value="Transgender">
+			    	<option value="Other">	
+			  	</datalist>
+				Ethnicity: <input type="text" list="Ethnicity" placeholder="Ethnicity" id="ethnicity"><br><br>
+				<datalist id="Ethnicity">
+			    	<option value="Asian">
+			    	<option value="Black">
+			    	<option value="Hispanic">
+			    	<option value="Latino">
+			    	<option value="Native American">
+			    	<option value="White">
+			    	<option type="text" value="Other">
+			  	</datalist>
+				Nationality: <input type="text" placeholder="Nationality" id="nationality"><br><br>
+				Pincode: <input type="text" placeholder="Pincode" id="pincode"><br><br>
+				Marital Status: <input type="text" list="Marital Status" placeholder="Marital Status" id="maritalStatus"><br><br>
+				<datalist id="Marital Status">
+			    	<option value="Married">
+			    	<option value="Not Married">
+			    	<option value="Divorced">
+			   	</datalist>
+			</form>
+		</section>
+		<section>
+			<h2> Biology and Health </h2>
+			<form>
+				Sex: <input type="text" list="Sex" placeholder="Sex" id="sex"><br><br>
+			  	<datalist id="Sex">
+			    	<option value="Male">
+			    	<option value="Female">
+			  	</datalist>
+			  	Diet: <input type="text" list="Diet" placeholder="Diet" id="diet"><br><br>
+			  	<datalist id="Diet">
+			    	<option value="Very unhealthy">
+			    	<option value="Somewhat unhealthy">
+			    	<option value="Neither healthy nor unhealthy">
+			    	<option value="Somewhat healthy">
+			    	<option value="Very healthy">
+			  	</datalist>
+			  	Exercise: <input type="text" list="Exercise" placeholder="Exercise" id="exercise"><br><br>
+			  	<datalist id="Exercise">
+			    	<option value="Very inactive">
+			    	<option value="Somewhat inactive">
+			    	<option value="Neither active nor inactive">
+			    	<option value="Somewhat active">
+			    	<option value="Very active">
+			  	</datalist>
+			  	Alcohol: <input type="text" list="Alcohol" placeholder="Alcohol" id="alcohol"><br><br>
+			  	<datalist id="Alcohol">
+			    	<option value="Never">
+			    	<option value="Once a month">
+			    	<option value="Once a week">
+			    	<option value="Once a day">
+			    	<option value="Multiple times a day">
+			  	</datalist>
+			  	Tobacco: <input type="text" list="Tobacco" placeholder="Tobacco" id="tobacco"><br><br>
+			  	<datalist id="Tobacco">
+			    	<option value="Never">
+			    	<option value="Once a month">
+			    	<option value="Once a week">
+			    	<option value="Once a day">
+			    	<option value="Multiple times a day">
+			  	</datalist>
+			</form>
+		</section>
+		<section>
+			<h2> Medical Conditions </h2>
+			<h4> Check off any medical conditions that you are diagnosed with</h4>
+			Diabetes <input type="checkbox" id="diabetes" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Hypertension <input type="checkbox" id="hypertension" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Hyperlipidemia <input type="checkbox" id="hyperlipidemia" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Back pain <input type="checkbox" id="backPain" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Anxiety <input type="checkbox" id="anxiety" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Obesity <input type="checkbox" id="obesity" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Respiratory problems <input type="checkbox" id="respiratoryProblems" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Hypothyroidism <input type="checkbox" id="hypothyroidism" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Fatigue <input type="checkbox" id="fatigue" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Pain in joint <input type="checkbox" id="painInJoint" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Depression  <input type="checkbox" id="depression" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Bronchitis <input type="checkbox" id="bronchitis" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+			Asthma <input type="checkbox" id="asthma" style="border:2px dotted #00f;display:block;background:#ff0000"><br><br>
+		</section>
+		<br><br><input type="submit" value="Submit" onclick="createObject()" style="float: left"><br><br>
+		<br><br><button onclick="printObject()"> PRINT TO CONSOLE </button><br><br>
+		<br><br><button onclick="deleteAllObjects()"> DELETE ALL OBJECTS </button><br><br>
+		<section>
+			<form>
+				Delete Object: <input type="text" placeholder="Delete Object" id="deleteObject"><br><br>
+			</form>
+		</section>
+		<br><br><button onclick="deleteObject()"> DELETE OBJECT </button><br><br>
+		<a href="../index.html" style="color:white">Back to home</a>
+	</body>
+</html>
