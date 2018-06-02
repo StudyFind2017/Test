@@ -38,7 +38,7 @@ function createStudy()
 
 		var jsonText = JSON.stringify(studies_strings);
 
-		localStorage.setItem("studies") = jsonText;
+		localStorage.setItem("studies",jsonText);
 	}
 
 	else
@@ -58,7 +58,7 @@ function createStudy()
 
 function printStudies()
 {
-	if(localStorage.getitem("studies")==null)
+	if(localStorage.getItem("studies")==null)
 	{
 		console.log("No studies to display");
 	}
